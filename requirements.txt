@@ -56,8 +56,6 @@ notebook==6.0.3
 numpy==1.18.1
 oauthlib==3.1.0
 opencv-python==4.2.0.34
-opt-einsum==3.2.1
-ortoolpy==0.2.31
 packaging==20.3
 pandas==1.0.3
 pandocfilters==1.4.2
