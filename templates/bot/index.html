@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+
+    {% block content %}
+    <h1>{{title}}</h1>
+    <p>{{today}}</p>
+    <p>{{question|safe}}</p>
+    <form action="{% url 'bot:index' %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="click">
+    </form>
+    <p>{{input|safe}}</p>
+    {% endblock %}

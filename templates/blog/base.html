@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
     </head>
     <body>
         <div class="page-header">
@@ -24,7 +24,13 @@
                     {% block content %}
                     {% endblock %}
                 </div>
+                
             </div>
         </div>
+        <ul>
+            <li><a href="{% url 'bot:index' %}">Bot　ホーム</a></li>
+            <li><a href="{% url 'blog:post_list' %}">ブログ　ホーム</a></li>
+        </ul>
+        
     </body>
 </html>

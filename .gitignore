@@ -4,6 +4,7 @@
 __pycache__
 db.sqlite3
 /static
+code_fukush.csv
 .DS_Store
 
 local_settings.py
